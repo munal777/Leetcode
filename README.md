@@ -8,6 +8,6 @@
 
 <p align="center">
   <a href="https://leetcode.com/u/munalpoudel/">
-    <img src="https://img.shields.io/badge/LeetCode-orange?logo=leetcode&logoColor=white" alt="LeetCode">
+    <img src="https://img.shields.io/badge/LeetCode-000000?style=for-the-badge&logo=leetcode&logoColor=orange" alt="LeetCode">
   </a>
 </p>
