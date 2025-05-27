@@ -1,4 +1,4 @@
-<h1 align="center">LeetCode Solutions</h1>
+<h1 align="center">🔥 LeetCode Problem Solutions 🔥</h1>
 
 <p align="center">
   This repository contains my solutions to LeetCode problems, organized by language.<br>
@@ -8,6 +8,6 @@
 
 <p align="center">
   <a href="https://leetcode.com/u/munalpoudel/">
-    <img src="https://img.shields.io/badge/LeetCode-E5E5E5?style=for-the-badge&logo=leetcode&logoColor=orange" alt="LeetCode">
+    <img src="https://img.shields.io/badge/LeetCode-orange?style=for-the-badge&logo=leetcode&logoColor=white" alt="LeetCode">
   </a>
 </p>
