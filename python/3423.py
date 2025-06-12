@@ -24,5 +24,6 @@ class Solution(object):
     
 
 obj = Solution()
-nums = [3,2,-5,-3]
+# nums = [3,2,-5,-3]
+nums = [3,-13,23,12,43,1,2]
 print(obj.maxAdjacentDistance(nums))
