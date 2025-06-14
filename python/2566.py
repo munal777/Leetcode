@@ -4,12 +4,18 @@ class Solution(object):
         :type num: int
         :rtype: int
         """
-        first = 9
-        for i in range(len(num)):
-            if num[0] != 9:
-                first = num[0]
-            if num[i] == first:
-                num[i] = 9
+        num_str = list(str(num)) 
 
-        return num
+        if num_str[0] != '9':
+            first = num_str[0]
+            for i in range(len(num_str)):
+                if num_str[i] == first:
+                    num_str[i] = '9'  
 
+        new_num = int(''.join(num_str))
+
+        return new_num
+
+obj = Solution()
+num = 11891
+print(obj.minMaxDifference(num))
