@@ -24,5 +24,3 @@ obj = Solution()
 nums = [4,2,9,8,2,12,7,12,10,5,8,5,5,7,9,2,5,11]
 k = 14
 print(obj.divideArray(nums, k))
-
-#problem here ----- not all test case pass -----
