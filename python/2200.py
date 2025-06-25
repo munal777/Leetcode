@@ -7,7 +7,22 @@ class Solution(object):
         :rtype: List[int]
         """
 
+        result = []
 
+        for i in range(len(nums)):
+            if nums[i] == key:
+                result.append(i)
+        
+        pre_res = []
+
+        for i in result:
+            start = max(0, i-k)
+            end = min(len(nums)-1, i+k)
+
+            for i in range(start, end + 1):
+                pre_res.append(i)
+            
+        return sorted(pre_res)
 
 
 
