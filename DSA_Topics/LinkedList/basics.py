@@ -14,14 +14,27 @@ def traverseList(head):
 
     traverseList(head.next)
 
+
+def searchElement(head,value):
+
+    while head is not None:
+        if head.data == value:
+            return True
+        
+        head = head.next
+    return False
+
+
 def main():
 
     head = Node(10)
     head.next = Node(20)
     head.next.next = Node(30)
 
-    traverseList(head)
+    # traverseList(head)
+    result = searchElement(head, 50)
+
+    print("yes" if result else "no")
 
 if __name__ == "__main__":
     main()
-
