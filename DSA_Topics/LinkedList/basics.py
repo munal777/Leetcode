@@ -24,17 +24,39 @@ def searchElement(head,value):
         head = head.next
     return False
 
+def countlength(head):
+    current = head
+    length = 0
+    while current is not None:
+        length += 1
+        current = current.next
+    
+    return length
+
+
+def InsertInBegin(head):
+    current = Node(5)
+    current.next = head
+
+    while current is not None:
+        print(current.data, end=' ')
+
+        current = current.next
+
 
 def main():
 
     head = Node(10)
     head.next = Node(20)
     head.next.next = Node(30)
+    head.next.next.next = Node(40)
 
     # traverseList(head)
-    result = searchElement(head, 50)
+    # result = searchElement(head, 50)
 
-    print("yes" if result else "no")
+    # print("yes" if result else "no")
+    # print(countlength(head))
+    InsertInBegin(head)
 
 if __name__ == "__main__":
     main()
