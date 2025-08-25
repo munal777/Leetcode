@@ -7,7 +7,6 @@ class Node:
 
 def traverseList(head):
     if head is None:
-        print()
         return
     
     print(head.data, end=' ')
@@ -34,25 +33,23 @@ def countlength(head):
     return length
 
 
-def InsertInBegin(head):
-    current = Node(5)
+def InsertInBegin(head, data):
+    current = Node(data)
     current.next = head
 
-    while current is not None:
-        print(current.data, end=' ')
-
-        current = current.next
+    return current
 
 def InsertInEnd(head, data):
-
-    current = head
     
-    if current is None:
-        current = Node(data)
+    if head is None:
+        return Node(data)
     
-    InsertInEnd(current.next, data)
-
+    if head.next is None:
+        head.next = Node(data)
+    else:
+        InsertInEnd(head.next, data)
     
+    return head
 
 def print_list(head):
 
@@ -62,8 +59,6 @@ def print_list(head):
         print(current.data, end= ' ')
 
         current = current.next
-    
-
 
 def main():
 
@@ -71,14 +66,7 @@ def main():
     head.next = Node(20)
     head.next.next = Node(30)
     head.next.next.next = Node(40)
-
-    # traverseList(head)
-    # result = searchElement(head, 50)
-
-    # print("yes" if result else "no")
-    # print(countlength(head))
-    # InsertInBegin(head)
-    head 
+    
 
 if __name__ == "__main__":
     main()
