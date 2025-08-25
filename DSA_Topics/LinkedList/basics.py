@@ -43,6 +43,27 @@ def InsertInBegin(head):
 
         current = current.next
 
+def InsertInEnd(head, data):
+
+    current = head
+    
+    if current is None:
+        current = Node(data)
+    
+    InsertInEnd(current.next, data)
+
+    
+
+def print_list(head):
+
+    current = head
+
+    while current is not None:
+        print(current.data, end= ' ')
+
+        current = current.next
+    
+
 
 def main():
 
@@ -56,7 +77,8 @@ def main():
 
     # print("yes" if result else "no")
     # print(countlength(head))
-    InsertInBegin(head)
+    # InsertInBegin(head)
+    head 
 
 if __name__ == "__main__":
     main()
