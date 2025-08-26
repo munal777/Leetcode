@@ -12,7 +12,12 @@ def InsertInSpecificPosition(head, position, data):
         new_node.next = head
         return new_node
     
-    
+    current = head
+    current_position = 1
+
+    while current is not None:
+        pass
+
 
 def print_list(head):
 
