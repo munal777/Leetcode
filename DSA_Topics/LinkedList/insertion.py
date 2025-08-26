@@ -4,6 +4,16 @@ class Node:
         self.data = data
         self.next = None
     
+
+def InsertInSpecificPosition(head, position, data):
+    new_node = Node(data)
+
+    if position == 1:
+        new_node.next = head
+        return new_node
+    
+    
+
 def print_list(head):
 
     while head is not None:
