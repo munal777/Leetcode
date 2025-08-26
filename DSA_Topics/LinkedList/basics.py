@@ -66,6 +66,26 @@ def main():
     head.next = Node(20)
     head.next.next = Node(30)
     head.next.next.next = Node(40)
+
+    print("orginal list:-")
+    print_list(head)
+
+    print('\n')
+    print('Insert in Begin:-')
+    head = InsertInBegin(head, 5)
+    print_list(head)
+
+    print('\n')
+    print('Insert in End:-')
+    head = InsertInEnd(head, 55)
+    print_list(head)
+
+    print('\n')
+    searched_data = searchElement(head, 10)
+    print(searched_data)
+
+    print('\n')
+    print(f'size of list: {countlength(head)}')
     
 
 if __name__ == "__main__":
