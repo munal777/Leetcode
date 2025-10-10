@@ -10,6 +10,18 @@ def deletionInFirst(head):
     
     head = head.next
     return head
+
+def deletionInLast(head):
+    head = head
+    curr = head
+
+    while curr.data is not None:
+        if curr.next is None:
+            curr.data = None
+            return head
+        
+        curr = curr.next
+
     
 
 def print_list(head):
@@ -25,9 +37,9 @@ def main():
     head.next.next = Node(15)
     head.next.next.next = Node(20)
 
-    head = deletionInFirst(head)
+    # head = deletionInFirst(head)
+    head = deletionInLast(head)
     print_list(head)
-
 
 
 
