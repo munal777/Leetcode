@@ -20,7 +20,7 @@ class Solution(object):
         for index in range(0, len(nums)):
             curr_num = nums[index]
             complement_num = target - curr_num
-            if  complement_num in maps:
+            if  complement_num in maps.keys():
                 return [maps[complement_num], index]
             
             maps[curr_num] = index
@@ -29,6 +29,6 @@ class Solution(object):
 
 
 
-nums = [2,7,11,15]
+nums = [2,2,7,11,15]
 obj = Solution()
-print(obj.twoSum(nums, 9))
+print(obj.twoSum(nums, 13))
